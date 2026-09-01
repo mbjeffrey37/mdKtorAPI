@@ -1,0 +1,9 @@
+ktor:
+  deployment:
+    port: 8080
+  application:
+    modules:
+      - com.milkdrop.HttpKt.configureHttp
+      - com.milkdrop.SerializationKt.configureSerialization
+      - com.milkdrop.StatusPagesKt.configureStatusPages
+      - com.milkdrop.RoutingKt.configureRouting
